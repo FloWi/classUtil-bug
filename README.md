@@ -15,7 +15,7 @@ When running `sbt test` I encounter this exception:
 [info]   at org.clapper.classutil.ClassFinder.processJar(ClassFinder.scala:344)
 ```
 
-The code at this location checks for the correct version of ASM
+The code at this location (`ClassVisitor.java:129`) checks for the correct version of ASM
 ```java
   public ModuleVisitor visitModule(final String name, final int access, final String version) {
     if (api < Opcodes.ASM6) {
