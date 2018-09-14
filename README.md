@@ -1,6 +1,6 @@
 # classUtil-bug
 
-runs into this exception.
+When running `sbt test` I run into this exception:
 ```
 [info]   java.lang.UnsupportedOperationException:
 [info]   at org.objectweb.asm.ClassVisitor.visitModule(ClassVisitor.java:129)
